@@ -1,7 +1,7 @@
 var gSortId, gSortDir
 
 function tableSort(tableId, col, rowStart, numericCol) {
-
+	//assume: col is a column number of a td element, tr.children[col]
 	//assume: rowStart >= 0; the row to start sorting from; some tables begin with rows containing info
 	//assume: numericCol = boolean; is the column numeric
 	
