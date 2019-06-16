@@ -39,8 +39,8 @@ function tableSort(tableId, col, rowStart, numericCol) {
     for (i = rowStart; i < rows.length - 1; i++) {
       rowx = rows[i];
       rowy = rows[i + 1];
-      x = rowx.sortData;
 
+      x = rowx.sortData;
       if (x === undefined) {
         //x = rowx.dataset['col' + col];
         x = rowx.children[col].innerHTML;
@@ -52,7 +52,6 @@ function tableSort(tableId, col, rowStart, numericCol) {
       }
 
       y = rowy.sortData;
-
       if (y === undefined) {
         y = rowy.children[col].innerHTML;
         //y = rowy.dataset['col' + col];
